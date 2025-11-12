@@ -22,10 +22,25 @@ print(1 < x < 20)         # True
 # Practice Problems:
 
 # Write an expression that checks if a number is between 50 and 100 (inclusive).
+number = int(input("What is you number?"))
+
+if number >= 50 and number <= 100:
+    print("The number is inclusive.") 
+else:
+    print("The number is NOT inclusive.")
 
 # Write an expression that checks if a number is NOT equal to 0 and greater than 10.
+num = 15
+print(not(num == 0) and num > 10) #True
 
 # Use chained comparison to check if 3 < 4 < 5.
+print (3 < 4 < 5) #True
 
 # Challenge: Create a password rule using logical operators:
+password = input("What is your password?")
 
+if len (password) >= 8 and any (char.isdigit() for char in password):
+    print("Password is valid.")
+else:
+    print("Password is invalid. " \
+          "It must be at least 8 characters long and contain at least one digit.")
