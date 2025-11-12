@@ -73,3 +73,9 @@ else:
 
 # asking for password
 password = input("What is your password?")
+# The password must be at least 8 characters long and contain at least one digit.password = "mypassword1"
+if len (password) >= 8 and any (char.isdigit() for char in password):
+    print("Password is valid.")
+else:
+    print("Password is invalid. " \
+          "It must be at least 8 characters long and contain at least one digit.")
